@@ -13,6 +13,8 @@ module.exports = {
                 'spin-slow': 'spin 20s linear infinite',
                 'floating-sm': 'floating-sm 4.5s ease-in-out infinite',
                 'floating-lg': 'floating-lg 4.5s ease-in-out infinite',
+                'floating-sm-f': 'floating-sm 4s ease-in-out infinite',
+                'floating-lg-f': 'floating-lg 4s ease-in-out infinite',
             },
             transformOrigin: {
                 'top-left-0-145': '0 145px',

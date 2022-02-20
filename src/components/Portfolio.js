@@ -79,11 +79,11 @@ const Portfolio = () => {
                 src="assets/images/pink-ball.svg"
                 alt=""
             />
-            <h2 className="w-[105px] absolute right-16 top-22 text-white text-3xl sm:right-32 sm:top-28">
+            <h2 className="w-[105px] absolute right-16 top-16 text-white text-3xl sm:right-32 sm:top-28">
                 POR<span className="text-theme-deep-orange">TFOLIO</span>
             </h2>
             <img
-                className="z-10 absolute -left-10 top-36 w-[200px] sm:w-[250px] sm:-left-20 animate-floating-sm lg:animate-floating-lg"
+                className="z-10 absolute -left-10 top-36 w-[200px] sm:w-[250px] sm:-left-20 animate-floating-sm-f lg:animate-floating-lg-f"
                 src="assets/images/yellow-bar.svg"
                 alt=""
             />
@@ -98,7 +98,7 @@ const Portfolio = () => {
                 alt=""
             />
             <img
-                className="z-10 absolute -left-20 bottom-28 w-[200px] sm:w-[320px] sm:left-2/3 animate-floating-sm lg:animate-floating-lg"
+                className="z-10 absolute -left-20 bottom-28 w-[200px] sm:w-[320px] sm:left-2/3 animate-floating-sm-f lg:animate-floating-lg-f"
                 src="assets/images/yellow-bar.svg"
                 alt=""
             />
@@ -110,7 +110,7 @@ const Portfolio = () => {
             <div className="mt-20 shrink-0 rounded-full w-[450px] h-[450px] sm:w-[600px] sm:h-[600px] sm:mr-[300px] lg:mr-[500px] bg-white flex justify-center items-center relative">
                 <div className="absolute top-8 text-sm">
                     <button
-                        className={`transition text-theme-deep-orange focus:outline-none px-3 py-2 rounded-2xl ${
+                        className={`transition text-theme-deep-orange hover:text-theme-pink focus:outline-none px-3 py-2 rounded-2xl ${
                             cat === 'frontend' ? 'bg-theme-yellow text-theme-pink' : ''
                         }`}
                         onClick={() => {
@@ -120,7 +120,7 @@ const Portfolio = () => {
                         Front-end project
                     </button>
                     <button
-                        className={`transition text-theme-deep-orange focus:outline-none px-3 py-2 rounded-2xl ${
+                        className={`transition text-theme-deep-orange hover:text-theme-pink focus:outline-none px-3 py-2 rounded-2xl ${
                             cat === 'illustration' ? 'bg-theme-yellow text-theme-pink' : ''
                         }`}
                         onClick={() => {
@@ -135,14 +135,14 @@ const Portfolio = () => {
                         <>
                             <Works />
                             <div className="hidden md:flex md:gap-6">
-                                <div className="overflow-hidden w-[250px] h-[200px] rounded-lg relative bg-slate-100">
+                                <div className="overflow-hidden w-[250px] h-[150px] rounded-lg relative bg-slate-100 group">
                                     <img
                                         style={{ transitionDuration: '5s' }}
-                                        className="w-full object-top blur-sm opacity-60 object-cover hover:-translate-y-2/4 transition-all"
+                                        className="w-full object-top blur-sm opacity-60 object-cover group-hover:-translate-y-2/4 transition-all"
                                         src="assets/images/frontend/taiwan-tour-guide_tai-walk.png"
                                         alt=""
                                     />
-                                    <p className="text-center absolute top-32 w-full text-sm -translate-y-2/4 font-medium text-theme-brown">
+                                    <p className="select-none text-center absolute top-20 w-full text-sm -translate-y-2/4 font-medium text-theme-brown">
                                         Responsive Web Design
                                         <br />
                                         "Tai Walk"
@@ -180,14 +180,14 @@ const Portfolio = () => {
                                     </p>
                                 </div>
 
-                                <div className="overflow-hidden w-[250px] h-[200px] rounded-lg relative bg-slate-100">
+                                <div className="overflow-hidden w-[250px] h-[150px] rounded-lg relative bg-slate-100 group">
                                     <img
                                         style={{ transitionDuration: '5s' }}
-                                        className="w-full object-top blur-sm opacity-60 object-cover hover:-translate-y-2/4 transition-all"
+                                        className="w-full object-top blur-sm opacity-60 object-cover group-hover:-translate-y-2/4 transition-all"
                                         src="assets/images/frontend/mary-blog-project.png"
                                         alt=""
                                     />
-                                    <p className="text-center absolute top-32 w-full text-sm -translate-y-2/4 font-medium text-theme-brown">
+                                    <p className="select-none text-center absolute top-20 w-full text-sm -translate-y-2/4 font-medium text-theme-brown">
                                         MERN Stack App
                                         <br />
                                         "Mary's blog"

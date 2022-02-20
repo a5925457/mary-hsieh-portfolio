@@ -2,8 +2,8 @@ import React from 'react';
 
 const Navbar = ({ fullpageApi }) => {
     return (
-        <div className="absolute z-10 top-0 text-white flex justify-between w-full p-2">
-            <h1>Mary Hsieh</h1>
+        <div className="absolute z-10 top-0 text-white flex justify-between w-full p-3 md:p-4 md:text-[18px]">
+            <h1 className="cursor-pointer">Mary Hsieh</h1>
             <ul className="font-light flex">
                 <li
                     className="px-1 cursor-pointer"

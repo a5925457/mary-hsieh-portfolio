@@ -28,7 +28,7 @@ const Banner = () => {
                 <div ref={ref} className="hidden">
                     Hi, I'm Mary. I'm a front-end developer.
                 </div>
-                <p className="text-[18px] lg:text-[24px] font-medium">{transformText}</p>
+                <p className="text-[18px] lg:text-[24px] font-medium select-none">{transformText}</p>
             </div>
         </div>
     );
