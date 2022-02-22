@@ -33,7 +33,7 @@ export default function Works() {
                             src="assets/images/frontend/taiwan-tour-guide_tai-walk.png"
                             alt=""
                         />
-                        <p className="absolute top-1/2 w-full text-sm -translate-y-2/4 font-medium text-theme-brown">
+                        <div className="absolute top-1/2 w-full text-sm -translate-y-2/4 font-medium text-theme-brown">
                             Responsive Web Design
                             <br />
                             "Tai Walk"
@@ -68,7 +68,7 @@ export default function Works() {
                                     </button>
                                 </a>
                             </div>
-                        </p>
+                        </div>
                     </div>
                 </SwiperSlide>
 
@@ -79,7 +79,7 @@ export default function Works() {
                             src="assets/images/frontend/mary-blog-project.png"
                             alt=""
                         />
-                        <p className="absolute top-1/2 w-full text-sm -translate-y-2/4 font-medium text-theme-brown">
+                        <div className="absolute top-1/2 w-full text-sm -translate-y-2/4 font-medium text-theme-brown">
                             MERN Stack App
                             <br />
                             "Mary's blog"
@@ -110,7 +110,7 @@ export default function Works() {
                                     </button>
                                 </a>
                             </div>
-                        </p>
+                        </div>
                     </div>
                 </SwiperSlide>
             </Swiper>

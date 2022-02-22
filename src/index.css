@@ -4,4 +4,33 @@
 
 * {
     font-family: 'Rubik', sans-serif;
+    touch-action: pan-y;
+}
+
+#fp-nav ul li:hover a.active span,
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li:hover a.active span,
+.fp-slidesNav ul li a.active span {
+    background: #ffd384 !important;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    background: #fff9b0 !important;
+}
+
+#fp-nav ul,
+.fp-slidesNav ul {
+    transform: translateX(1rem);
+}
+
+@media (min-width: 640px) {
+    #fp-nav ul,
+    .fp-slidesNav ul {
+        transform: translateX(0rem);
+    }
+}
+
+.ch-font {
+    font-family: 'Kosugi Maru', sans-serif;
 }

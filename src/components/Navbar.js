@@ -6,7 +6,7 @@ const Navbar = ({ fullpageApi }) => {
             <h1 className="cursor-pointer">Mary Hsieh</h1>
             <ul className="font-light flex">
                 <li
-                    className="px-1 cursor-pointer"
+                    className="px-1 cursor-pointer hover:text-theme-yellow"
                     onClick={() => {
                         fullpageApi.moveTo(2);
                     }}
@@ -14,7 +14,7 @@ const Navbar = ({ fullpageApi }) => {
                     ABOUT
                 </li>
                 <li
-                    className="px-1 cursor-pointer"
+                    className="px-1 cursor-pointer hover:text-theme-yellow"
                     onClick={() => {
                         fullpageApi.moveTo(3);
                     }}
@@ -22,7 +22,7 @@ const Navbar = ({ fullpageApi }) => {
                     PORTFOLIO
                 </li>
                 <li
-                    className="px-1 cursor-pointer"
+                    className="px-1 cursor-pointer hover:text-theme-yellow"
                     onClick={() => {
                         fullpageApi.moveTo(4);
                     }}

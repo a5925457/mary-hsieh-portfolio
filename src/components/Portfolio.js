@@ -24,6 +24,7 @@ const Portfolio = () => {
         setTempimgSrc(imgSrc);
         setModal(true);
     };
+    let imagesLoaded = 0;
     const renderIllustration = illustration.map((image, i) => {
         return (
             <React.Fragment key={i}>
@@ -62,7 +63,10 @@ const Portfolio = () => {
                 >
                     <img
                         onLoad={() => {
-                            setIsLoading(false);
+                            imagesLoaded++;
+                            if (imagesLoaded === illustration.length) {
+                                setIsLoading(false);
+                            }
                         }}
                         className="rounded-full object-cover w-full h-full"
                         src={image}
@@ -142,7 +146,7 @@ const Portfolio = () => {
                                         src="assets/images/frontend/taiwan-tour-guide_tai-walk.png"
                                         alt=""
                                     />
-                                    <p className="select-none text-center absolute top-20 w-full text-sm -translate-y-2/4 font-medium text-theme-brown">
+                                    <div className="select-none text-center absolute top-20 w-full text-sm -translate-y-2/4 font-medium text-theme-brown">
                                         Responsive Web Design
                                         <br />
                                         "Tai Walk"
@@ -177,7 +181,7 @@ const Portfolio = () => {
                                                 </button>
                                             </a>
                                         </div>
-                                    </p>
+                                    </div>
                                 </div>
 
                                 <div className="overflow-hidden w-[250px] h-[150px] rounded-lg relative bg-slate-100 group">
@@ -187,7 +191,7 @@ const Portfolio = () => {
                                         src="assets/images/frontend/mary-blog-project.png"
                                         alt=""
                                     />
-                                    <p className="select-none text-center absolute top-20 w-full text-sm -translate-y-2/4 font-medium text-theme-brown">
+                                    <div className="select-none text-center absolute top-20 w-full text-sm -translate-y-2/4 font-medium text-theme-brown">
                                         MERN Stack App
                                         <br />
                                         "Mary's blog"
@@ -222,7 +226,7 @@ const Portfolio = () => {
                                                 </button>
                                             </a>
                                         </div>
-                                    </p>
+                                    </div>
                                 </div>
                             </div>
                         </>

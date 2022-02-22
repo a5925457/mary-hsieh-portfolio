@@ -1,5 +1,4 @@
 import React from 'react';
-import { Animated } from 'react-animated-css';
 import { Link } from 'react-router-dom';
 
 const Contact = () => {
@@ -24,7 +23,7 @@ const Contact = () => {
                 alt=""
             />
             <img
-                className="absolute left-1/3 top-64 w-[200px] sm:w-[400px] sm:top-72 sm:left-2/3 animate-floating-sm lg:animate-floating-lg"
+                className="absolute left-2/3 top-64 w-[200px] sm:w-[400px] sm:top-72 sm:left-2/3 animate-floating-sm lg:animate-floating-lg"
                 src="assets/images/orange-bar.svg"
                 alt=""
             />
@@ -38,31 +37,29 @@ const Contact = () => {
                 src="assets/images/yellow-bar.svg"
                 alt=""
             />
-            <Animated animationIn="fadeIn" animationInDuration={1500} animationInDelay={1500} isVisible={true}>
-                <div className="mt-20 flex justify-center items-center flex-col md:flex-row ">
-                    <a href="https://github.com/a5925457" target="_blank" rel="noreferrer">
-                        <div className="rounded-full w-[150px] h-[150px] md:w-[220px] md:h-[220px] bg-white my-2 flex justify-center items-center hover:bg-[#fff5f1] transition duration-300 md:absolute md:left-1/4 md:bottom-1/4">
-                            <i className="fa-brands fa-github text-6xl text-theme-pink sm:text-7xl"></i>
-                        </div>
-                    </a>
-                    <Link
-                        to="#"
-                        onClick={(e) => {
-                            window.location = 'mailto:a5925457@gmail.com';
-                            e.preventDefault();
-                        }}
-                    >
-                        <div className="rounded-full w-[150px] h-[150px] md:w-[220px] md:h-[220px] bg-white my-2 flex justify-center items-center hover:bg-[#fff5f1] transition duration-300 md:absolute md:left-2/4 md:top-1/4">
-                            <i className="fa-solid fa-envelope text-6xl text-theme-pink sm:text-7xl"></i>
-                        </div>
-                    </Link>
-                    <a href="tel:+886979491520">
-                        <div className="rounded-full w-[150px] h-[150px] md:w-[220px] md:h-[220px] bg-white my-2 flex justify-center items-center hover:bg-[#fff5f1] transition duration-300 md:absolute md:left-3/4 md:top-1/2">
-                            <i className="fa-solid fa-phone text-6xl text-theme-pink sm:text-7xl"></i>
-                        </div>
-                    </a>
-                </div>
-            </Animated>
+            <div className="mt-20 flex justify-center items-center flex-col md:flex-row ">
+                <a href="https://github.com/a5925457" target="_blank" rel="noreferrer">
+                    <div className="rounded-full w-[150px] h-[150px] md:w-[220px] md:h-[220px] bg-white my-2 flex justify-center items-center hover:bg-[#fff5f1] transition duration-300 md:absolute md:left-1/4 md:bottom-1/4">
+                        <i className="fa-brands fa-github text-6xl text-theme-pink sm:text-7xl"></i>
+                    </div>
+                </a>
+                <Link
+                    to="#"
+                    onClick={(e) => {
+                        window.location = 'mailto:a5925457@gmail.com';
+                        e.preventDefault();
+                    }}
+                >
+                    <div className="rounded-full w-[150px] h-[150px] md:w-[220px] md:h-[220px] bg-white my-2 flex justify-center items-center hover:bg-[#fff5f1] transition duration-300 md:absolute md:left-2/4 md:top-1/4">
+                        <i className="fa-solid fa-envelope text-6xl text-theme-pink sm:text-7xl"></i>
+                    </div>
+                </Link>
+                <a href="tel:+886979491520">
+                    <div className="rounded-full w-[150px] h-[150px] md:w-[220px] md:h-[220px] bg-white my-2 flex justify-center items-center hover:bg-[#fff5f1] transition duration-300 md:absolute md:left-3/4 md:top-1/2">
+                        <i className="fa-solid fa-phone text-6xl text-theme-pink sm:text-7xl"></i>
+                    </div>
+                </a>
+            </div>
         </div>
     );
 };
