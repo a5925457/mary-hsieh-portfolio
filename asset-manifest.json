@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mary-hsieh-portfolio/static/css/main.9530247e.css",
+    "main.js": "/mary-hsieh-portfolio/static/js/main.2e387158.js",
+    "index.html": "/mary-hsieh-portfolio/index.html",
+    "main.9530247e.css.map": "/mary-hsieh-portfolio/static/css/main.9530247e.css.map",
+    "main.2e387158.js.map": "/mary-hsieh-portfolio/static/js/main.2e387158.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9530247e.css",
+    "static/js/main.2e387158.js"
+  ]
+}
