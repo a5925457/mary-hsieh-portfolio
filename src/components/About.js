@@ -17,7 +17,7 @@ const About = () => {
                 alt=""
             />
             <img
-                className="z-10 absolute left-0 top-48 w-[200px] sm:w-[250px] sm:left-1/3 animate-floating-sm-f lg:animate-floating-lg-f"
+                className="z-10 absolute left-0 top-48 w-[200px] sm:w-[250px] sm:left-1/3 animate-floating-sm lg:animate-floating-lg"
                 src="assets/images/pink-bar.svg"
                 alt=""
             />

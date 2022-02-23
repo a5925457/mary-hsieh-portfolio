@@ -18,7 +18,7 @@ const Contact = () => {
                 alt=""
             />
             <img
-                className="absolute -right-4 top-60 w-[180px] sm:w-[400px] sm:right-8 animate-floating-sm-f lg:animate-floating-lg-f"
+                className="absolute -right-4 top-60 w-[180px] sm:w-[400px] sm:right-8 animate-floating-sm lg:animate-floating-lg"
                 src="assets/images/pink-bar.svg"
                 alt=""
             />
@@ -28,7 +28,7 @@ const Contact = () => {
                 alt=""
             />
             <img
-                className="z-10 absolute -left-12 bottom-32 w-[150px] sm:w-[250px] sm:-left-8 animate-floating-sm-f lg:animate-floating-lg-f"
+                className="z-10 absolute -left-12 bottom-32 w-[150px] sm:w-[250px] sm:-left-8 animate-floating-sm lg:animate-floating-lg"
                 src="assets/images/pink-bar.svg"
                 alt=""
             />

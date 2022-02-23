@@ -1,17 +1,17 @@
 import React, { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
+// import { gsap } from 'gsap';
 
 const Banner = () => {
     const ref = useRef();
-    const logoRef = useRef();
-    const tl = useRef();
+    // const logoRef = useRef();
+    // const tl = useRef();
 
-    useEffect(() => {
-        tl.current = gsap
-            .timeline({ repeat: -1, repeatDelay: 0.2 })
-            .to(logoRef.current, 1, { css: { backgroundImage: 'url(assets/images/icon.svg)' } })
-            .to(logoRef.current, 0.1, { css: { backgroundImage: 'url(assets/images/icon2.svg)' } });
-    }, []);
+    // useEffect(() => {
+    //     tl.current = gsap
+    //         .timeline({ repeat: -1, repeatDelay: 0.2 })
+    //         .to(logoRef.current, 1, { css: { backgroundImage: 'url(assets/images/icon.svg)' } })
+    //         .to(logoRef.current, 0.1, { css: { backgroundImage: 'url(assets/images/icon2.svg)' } });
+    // }, []);
 
     const transformText = ref.current?.innerText.split('').map((char, i) => {
         return (
@@ -34,11 +34,11 @@ const Banner = () => {
                 style={{ backgroundImage: `url(${'assets/images/icon.svg'})` }}
                 className="logo absolute w-[250px] h-[250px] lg:w-[300px] lg:h-[300px] bg-cover"
             ></div>
-            <div
+            {/* <div
                 ref={logoRef}
                 style={{ backgroundImage: `url(${'assets/images/icon.svg'})` }}
                 className="logo absolute w-[250px] h-[250px] lg:w-[300px] lg:h-[300px] bg-cover"
-            ></div>
+            ></div> */}
             <div className="text absolute w-full h-full animate-spin-slow">
                 <div ref={ref} className="hidden">
                     Hi, I'm Mary. I'm a front-end developer.

@@ -87,7 +87,7 @@ const Portfolio = () => {
                 POR<span className="text-theme-deep-orange">TFOLIO</span>
             </h2>
             <img
-                className="z-10 absolute -left-10 top-36 w-[200px] sm:w-[250px] sm:-left-20 animate-floating-sm-f lg:animate-floating-lg-f"
+                className="z-10 absolute -left-10 top-36 w-[200px] sm:w-[250px] sm:-left-20 animate-floating-sm lg:animate-floating-lg"
                 src="assets/images/yellow-bar.svg"
                 alt=""
             />
@@ -102,7 +102,7 @@ const Portfolio = () => {
                 alt=""
             />
             <img
-                className="z-10 absolute -left-20 bottom-28 w-[200px] sm:w-[320px] sm:left-2/3 animate-floating-sm-f lg:animate-floating-lg-f"
+                className="z-10 absolute -left-20 bottom-28 w-[200px] sm:w-[320px] sm:left-2/3 animate-floating-sm lg:animate-floating-lg"
                 src="assets/images/yellow-bar.svg"
                 alt=""
             />

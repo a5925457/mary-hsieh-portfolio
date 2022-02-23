@@ -18,6 +18,8 @@ export default function Works() {
             <Swiper
                 slidesPerView={1}
                 spaceBetween={30}
+                observer={true}
+                observeParents={true}
                 loop={true}
                 pagination={{
                     clickable: true,
